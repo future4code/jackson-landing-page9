@@ -5,6 +5,7 @@
 
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,11 +18,122 @@ body {
 
 header {
 
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 14vh;
+  align-items: center;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  padding: 0 20px;
+}
+
+header img {
+  
+  height:35px; 
+}
+
+header nav a {
+
+  margin: 15px;
+  text-decoration: none;
+  color: #666;
+  font-weight: 700;
+}
+
+header nav a:hover {
+
+  color: var(--roxinho);
+} 
+
+header nav:nth-child(3) a {
+  color: var(--roxinho)
+
+}
+
+header nav button {
+  border:none;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: var(--roxinho);
+  color: white;
+  font-weight: 700;
 }
 
 #quem-somos {
+height: 90vh;
+margin:80px;
+background-image: url(img/img1);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+}
+
+#quem-somos img {
+  width: 403px;
+  margin-top: 150px;
+}
+
+#quem-somos article {
+  color: white;
+  font-size: 40px;
+  width: 500px;
+  margin:50px;
+}
+
+#quem-somos article p{
+  font-size:25px
+}
+
+#quem-somos article button {
+  border:none;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: var(--roxinho);
+  color:white;
+  font-weight: 700;
+}
+
+#sobre-empresa {
+  height: 70vh;
+  background-image: url(img/nub.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size:40px;
 
 }
+
+#sobre-empresa article {
+  width: 500px;
+  margin:50px;
+  padding-top: 50px;
+
+}
+
+#e-possivel {
+  display:flex;
+  height: 90vh;
+  align-items: center;
+  justify-content:center;
+}
+
+#e-possivel article {
+  text-align: center;
+  width: 50%;
+}
+
+#e-possivel article h1 {
+  font-size:50px;
+}
+
+#e-possivel p {
+  font-size: 25px;
+}
+
+
+
 
 /* DANIEL */
 
@@ -37,4 +149,39 @@ header {
 
 footer {
 
+}
+
+@media (max-width:600px) {
+  
+  header nav a {
+    display: none;
+  }
+
+  #quem-somos {
+    margin:100px 0;
+  }
+  
+  #quem-somos article {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  #quem-somos img {
+    display:none;
+  }
+
+  #sobre-empresa {
+    font-size: 20px;
+  }
+ 
+  #e-possivel article h1{
+    margin-top:30px;
+    font-size: 30px;
+  }
+
+  #e-possivel article p{
+    font-size:18px;
+  }
+  
 }
