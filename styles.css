@@ -26,7 +26,72 @@ header {
 /* DANIEL */
 
 #produtos {
+  display: flex;
+  flex-direction: column;
+}
 
+#conta-do-nubank {
+  background-color: #f5f5f5;
+}
+
+#produtos article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 32px;
+}
+
+.descricao {
+  max-width: 400px;
+}
+
+.descricao > a:first-child {
+  text-decoration: none;
+  color: var(--roxinho);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.descricao > p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.descricao > a:last-child {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--roxinho);
+}
+
+.descricao > a:hover {
+  text-decoration: underline;
+}
+
+.descricao img {
+  height: 16px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 930px) {
+  .descricao {
+    padding: 64px 32px;
+  }
+
+  .descricao > a:first-child {
+    font-size: 1.5rem;
+  }
+  
+  .descricao > p {
+    font-size: 1.5rem;
+  }
+
+  article > img {
+    max-width: 100%;
+  }
 }
 
 /* MATH */
