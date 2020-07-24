@@ -30,6 +30,8 @@ header {}
 
 .contato {
   border: 1px solid var(--roxinho);
+  border-left: none;
+  border-right: none;
   display: flex;
   justify-items: center;
 }
@@ -59,7 +61,9 @@ header {}
 .contato textarea {
   height: 28px;
 }
+
 /* Responsivo Do Formulário = contato */
+
 @media screen and (max-width:375px) {
   .contato {
     display: flex;
@@ -75,8 +79,8 @@ header {}
     justify-content: center;
   }
   .contato input, textarea {
-    font-size: 10px;
     border: 1px solid var(--roxinho);
+    font-size: 10px;
     width: 100px;
     height: 20px;
     margin: 5px;
@@ -90,10 +94,12 @@ header {}
 
 #rodape {
   background-color: var(--cinzao);
-  display: flex;
   width: 100%;
+  display: flex;
 }
+
 /* #Configs onde vai o nome da empresa no rodapé*/
+
 .empresa {
   color: var(--roxinho);
   font-size: 21px;
@@ -102,18 +108,22 @@ header {}
   align-items: center;
   justify-content: center;
 }
+
 /* #Configs onde mostram as "infos" no rodapé */
+
 .infos {
   width: 60%;
   display: flex;
 }
 
-.infos>ul,a {
+.infos>ul, a {
   list-style: none;
   text-decoration: none;
   color: black;
 }
+
 /* #Configs onde ajusta io tamanho das imagens das logos */
+
 .redes-sociais {
   width: 30%;
   display: flex;
