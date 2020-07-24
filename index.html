@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <title>Document</title>
 </head>
+
 <body>
   <!-- LIS -->
   <header></header>
@@ -23,12 +25,54 @@
     </section>
 
     <!-- MATH -->
-    <section id="contato">
+    <section class="contato">
+      <form action="contato">
+        <ul>
+          <li>
+            <div><label for="nome"><strong>Nome completo</strong></label></div>
+            <div> <input type="text" name="nome" id="nome" placeholder="Nome completo"></div>
+          </li>
+          <li>
+            <div><label for="email"><strong>E-mail</strong></label></div>
+            <div><input type="email" name="email" id="email" placeholder="E-mail"></div>
+          </li>
+          <li>
+            <div><label for="motivo"><strong>Motivo do contato</strong></label></div>
 
+            <div><textarea name="motivo" id="motivo" cols="30" rows="2" placeholder="Motivo do Contato"></textarea>
+            </div>
+          </li>
+
+        </ul>
+
+      </form>
     </section>
   </main>
 
   <!-- MATH -->
-  <footer></footer>
+
+  <footer id="rodape">
+    <div class="empresa">
+      <p>NUBANK</p>
+    </div>
+    <div class="infos">
+      <ul>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer"> Siga as nossas redes sociais -> </a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer"> Conheça nossos produtos ^</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer"> Venha ser Roxinho ^^</a></li>
+      </ul>
+    </div>
+    <div class="redes-sociais">
+      <div><a href="https://www.facebook.com/nubank/" target="_blank"><img src="./img/face.png" alt="Facebook"></div></a>
+      <div><a href="https://twitter.com/nubank" target="_blank"><img src="./img/tt.png" alt="Twitter"></div></a>
+      <div><a href="https://www.instagram.com/nubank/?hl=pt-br" target="_blank"><img src="./img/insta.png" alt="Instagram"></div></a>
+      <div><a href="https://www.linkedin.com/company/nubank" target="_blank"><img src="./img/link.png" alt="Linkedin"></div></a>
+      <div><a href="https://www.youtube.com/channel/UCgsDX3hTwiPdtGHJjMFfDxg" target="_blank"><img src="./img/yt.png" alt="YouTube">
+      </div></a>
+
+    </div>
+  </footer>
+
 </body>
+
 </html>
